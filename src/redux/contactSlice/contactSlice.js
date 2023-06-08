@@ -31,11 +31,11 @@ export const { addContact, deleteContact, setFilter } = contactsSlice.actions;
 export const contactsReducer = contactsSlice.reducer;
 
 /* 
- Редьюсер - это функцыия, которая принимает стейт и екшн(объект инструкцию) и изменяет состояние. 
+ reducer - это функцыия, которая принимает стейт и екшн(объект инструкцию) и изменяет состояние. 
     addContact(state, action) {
         state.contacts = [...state.contacts, action.payload]
     }
- Экшин - объект instruction, который имеет два поля, тип и пейлоад, при этом, тип обязательный
+ action - объект instruction, который имеет два поля, тип и пейлоад, при этом, тип обязательный
     { type: "contacts/addContacts" , payload }
 
 */
