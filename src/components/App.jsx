@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import Form from './Form';
 import ContactsList from './ContactsList';
 import Filter from './Filter';
@@ -6,9 +6,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addContact, deleteContact, setFilter } from 'redux/contactSlice/contactSlice';
 
 export default function App() {
+
   const dispatch = useDispatch(); // Logistic function
+  
   // We subscribe on conrete field in our store.
   const contacts = useSelector(state => state.appContacts.contacts)
+  const filter = useSelector(state => state.appContacts.filter);
 
   // const [contacts, setContacts] = useState([
   //   { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -17,7 +20,6 @@ export default function App() {
   //   { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
   // ]);
    //const [filter] = useState('');
- const filter = useSelector(state => state.appContacts.filter);
 
  // useEffect(() => {
    // localStorage.setItem('contacts', JSON.stringify(contacts));
