@@ -31,7 +31,7 @@ export const { addContact, deleteContact, setFilter } = contactsSlice.actions;
 export const contactsReducer = contactsSlice.reducer;
 
 /* 
- reducer - это функцыия, которая принимает стейт и екшн(объект инструкцию) и изменяет состояние. 
+ reducer - это функцыия, которая принимает стейт и action(объект инструкцию) и изменяет состояние. 
     addContact(state, action) {
         state.contacts = [...state.contacts, action.payload]
     }
